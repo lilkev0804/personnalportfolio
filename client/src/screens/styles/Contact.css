@@ -43,6 +43,12 @@ footer {
 .logo-social-form:hover {
   transform: scale(1.2);
 }
+.buttonEmail{
+  z-index: 10;
+  background-color: transparent;
+  border: none;
+
+}
 @media screen and (max-width: 510px) {
   .contact-box {
     width: 80%;
