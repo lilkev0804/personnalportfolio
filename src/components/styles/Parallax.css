@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+.Parallax {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+}
+.Parallax h2{
+    font-family: 'Train One', cursive;
+}
+.Parallax h1{
+    font-size: 2rem;
+    font-family: 'Dela Gothic One', cursive;
+    text-shadow: 1px 1px #01011b;
+}
+.bgHome {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}

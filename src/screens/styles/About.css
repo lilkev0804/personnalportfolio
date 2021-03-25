@@ -1,0 +1,121 @@
+.about-section {
+  width: 95%;
+  max-width: 1400px;
+  margin: auto;
+  padding-top: 10vh;
+  min-height: 90vh;
+  position: relative;
+  display: flex;
+}
+.container-myself {
+  width: 50%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-parcours {
+  width: 50%;
+  min-height: 400px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-myself {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.container-myself h3 {
+  letter-spacing: 1.3px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.lang-container,
+.tools-container {
+  width: 40%;
+  min-height: 300px;
+  padding: 1vh 1vw;
+  border: 5px solid rgb(7, 6, 12);
+}
+.lang-container {
+  box-shadow: 20px 20px 0px #01011b;
+}
+.tools-container {
+  box-shadow: -20px 20px 0px #01011b;
+}
+.container-lang {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+}
+.lang-container h3,
+.tools-container h3 {
+  text-align: left;
+}
+.logolang {
+  width: 50px;
+  margin: 10px 5px;
+}
+.containerlogo {
+  display: flex;
+  margin: 2vh 0;
+}
+#school-logo-1 {
+  width: 200px;
+}
+.Titleabout {
+  letter-spacing: 1.3px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-family: "Dela Gothic One", cursive;
+}
+.boxschool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.boxschool p {
+  text-align: center;
+}
+@media screen and (max-width: 1095px) {
+  .lang-container,
+  .tools-container {
+    width: 300px;
+    margin: 5vh auto;
+  }
+}
+@media screen and (max-width: 765px) {
+  .about-section {
+    flex-direction: column;
+  }
+  .container-parcours,
+  .container-myself {
+    width: 100%;
+  }
+  .lang-container,
+  .tools-container {
+    width: 50%;
+    margin: 5vh auto;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .lang-container,
+  .tools-container {
+    width: 80%;
+    margin: 5vh auto;
+  }
+  .lang-container {
+    box-shadow: 10px 10px 0px #01011b;
+  }
+  .tools-container {
+    box-shadow: -10px 10px 0px #01011b;
+  }
+}
