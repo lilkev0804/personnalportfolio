@@ -32,27 +32,45 @@ export default function Navbar() {
       <ul
         className="navbar-list"
         style={{
-          display: `${window.innerWidth > 765 ? "flex" : `${visible ? "flex" : "none"}`}`,
+          display: `${
+            window.innerWidth > 765 ? "flex" : `${visible ? "flex" : "none"}`
+          }`,
           overflow: `${scroll ? "hidden" : ""}`,
         }}
       >
         <li>
-          <a onClick={window.innerWidth > 765 ? "" : handleClick}  className="navbar-link" href="#home">
+          <a
+            onClick={window.innerWidth > 765 ? "" : handleClick}
+            className="navbar-link"
+            href="#home"
+          >
             Accueil
           </a>
         </li>
         <li>
-          <a  onClick={window.innerWidth > 765 ? "" : handleClick} className="navbar-link" href="#projet">
+          <a
+            onClick={window.innerWidth > 765 ? "" : handleClick}
+            className="navbar-link"
+            href="#projet"
+          >
             Projets
           </a>
         </li>
         <li>
-          <a  onClick={window.innerWidth > 765 ? "" : handleClick} className="navbar-link" href="#about">
+          <a
+            onClick={window.innerWidth > 765 ? "" : handleClick}
+            className="navbar-link"
+            href="#about"
+          >
             A propos
           </a>
         </li>
         <li>
-          <a  onClick={window.innerWidth > 765 ? "" : handleClick} className="navbar-link" href="#contact">
+          <a
+            onClick={window.innerWidth > 765 ? "" : handleClick}
+            className="navbar-link"
+            href="#contact"
+          >
             Contact
           </a>
         </li>
@@ -66,6 +84,7 @@ export default function Navbar() {
           top: `${scroll ? "1.5vh" : ""}`,
           backgroundColor: `${scroll ? "white" : ""}`,
           color: `${scroll ? "#01011b" : ""}`,
+          borderColor: `${visible ? "#01011b" : ""}`,
         }}
       >
         <img

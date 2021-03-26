@@ -67,8 +67,9 @@
     top: 2.5vh;
     right: 10px;
     cursor: pointer;
-    transition: all 0.7s .1s linear;
+    transition: all 0.7s 0.1s linear;
     color: white;
+    border-color: transparent;
   }
   .buttonBurger:focus {
     outline: none;
