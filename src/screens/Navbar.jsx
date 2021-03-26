@@ -69,7 +69,7 @@ export default function Navbar() {
         }}
       >
         <img
-          src={visible ? "img/hamburger.svg" : "img/close.svg"}
+          src={visible ? "img/close.svg" : "img/hamburger.svg"}
           alt="burger menu logo"
         ></img>
       </button>
