@@ -1,0 +1,115 @@
+.navbar {
+  width: 100%;
+  height: 10vh;
+  max-height: 200px;
+  background-color: rgba(0, 0, 0, 0.493);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  transition: all 0.5s ease-in;
+}
+.navbar-list {
+  list-style: none;
+}
+.navbar-link {
+  color: white;
+  margin-right: 2rem;
+  text-decoration: none;
+  letter-spacing: 1.2px;
+  border: 1px solid transparent;
+  transition: all 0.5s ease;
+  padding-bottom: 1px;
+}
+.navbar-link:hover {
+  border-bottom: 1px solid white;
+}
+.buttonBurger {
+  display: none;
+}
+@media screen and (max-width: 765px) {
+  .navbar {
+    align-items: flex-start !important;
+  }
+  .navbar-list {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: none;
+    height: 100vh;
+    background-color: white;
+
+    transition: all 0.5s ease-in-out;
+  }
+  .openBtnAn {
+    animation: open 1s ease-in forwards;
+  }
+  @keyframes open {
+    from {
+      opacity: 0;
+      width: 0;
+      right: 0;
+      display: none;
+    }
+    to {
+      opacity: 1;
+      width: 100vw;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .closeBtnAn {
+    animation: close 1s ease-in forwards;
+  }
+  @keyframes close {
+    from {
+      opacity: 1;
+      width: 100vw;
+      right: 0;
+      display: flex;
+    }
+    to {
+      opacity: 0;
+      width: 0;
+      right: 0;
+      display: none;
+    }
+  }
+  .navbar-list li {
+    margin: 17vh 0 !important;
+    text-align: center;
+  }
+  
+  .navbar-link {
+    color: #01011b;
+  }
+  .navbar-link:hover {
+    border-bottom: 1px solid #01011b;
+  }
+  .buttonBurger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    height: 5vh;
+    width: 50px;
+    background-color: #01011b;
+    position: absolute;
+    top: 2.5vh;
+    right: 10px;
+    cursor: pointer;
+    transition: all 0.7s 0.1s linear;
+    color: white;
+    border-color: transparent;
+  }
+  .buttonBurger:focus {
+    outline: none;
+  }
+}
