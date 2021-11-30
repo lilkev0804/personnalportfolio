@@ -7,7 +7,7 @@ export default function ProjectElement(props) {
         <img
           className="thumbnail-projet"
           alt="illustration de mon projet"
-          src={`img/${props.img}.png`}
+          src={`img/${props.img}.jpg`}
           id={`photo${props.id}`}
         ></img>
       </div>
@@ -25,8 +25,8 @@ export default function ProjectElement(props) {
           rel="noreferrer"
           target="_blank"
         >
-          {" "}
-          Visitez
+          {props.link}
+          
         </a>
       </div>
     </div>

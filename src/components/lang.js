@@ -30,5 +30,9 @@ export const lang = [
   {
     id: 8,
     title: "php",
+  },  
+  {
+    id: 9,
+    title: "vue",
   },
 ];

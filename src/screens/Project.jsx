@@ -18,6 +18,7 @@ export default function Project() {
           text={pro.texte}
           url={pro.url}
           stack={pro.stack}
+          link={pro.url === "" ? "Bientot" : "Découvrir"}
         ></ProjetElement>
       ))}
     </div>
